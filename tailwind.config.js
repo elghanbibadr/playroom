@@ -9,7 +9,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        textGrey:'#858898'
+        textGrey:'#858898',
+        lightBlack:'#0D0D0E',
+        primaryBorderColor:'#3F3F48'
       }
     },
   },
