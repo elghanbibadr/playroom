@@ -1,73 +1,35 @@
 import React, { useState,useEffect } from 'react'
-import hamburgerMenu from "../assets/menuHamburger.svg"
-import logo from "../assets/playroomlogo.png"
-import closeIcon from "../assets/closeIcon.svg"
+
+import Navbar from '../componenets/Navbar'
 const Home = () => {
 
-    const [isOpen ,setIsOpen]=useState(false)
-    const [isFeaturesClicked,setIsFeaturesClicked]=useState(false)
 
-    useEffect(() => {
-        const handleResize = () => {
-          // Set isOpen to true when screen width is larger than 786
-          setIsOpen(window.innerWidth > 786);
-        };
+ return (
+    <div className='p-10'>
     
-        // Initial setup
-        handleResize();
-    
-        // Attach the event listener
-        window.addEventListener('resize', handleResize);
-    
-        // Clean up the event listener on component unmount
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []); // Empty dependency array ensures that this effect runs once after the initial render
-    
-  return (
-    
-<nav className='md:flex md:justify-between md:items-center md:p-10' > 
-<img className='hidden md:block' src={logo} alt="playroom logo" />
+  <Navbar/>
 
-  <div className='flex justify-between items-center  border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center w-[90%] md:w-1/2 mx-auto mt-6  px-8 py-6 rounded-full'>
-      <img className='h-[24px] md:hidden' src={logo} alt="playroom logo" />
-         {!isOpen &&   <img onClick={() => setIsOpen(true)} className='md:hidden h-6' src={hamburgerMenu} alt="hamburger menu" />}
-        {isOpen && <img onClick={() => setIsOpen(false)} className='md:hidden h-8' src={closeIcon} alt="close icon" />}
-
-      
+  {/*hero  */}
+  <div className='md:text-center md:mt-40'>
+      <div>
+          <div className='flex items-center border-[1px] p-2 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
+          <p className='text-[1.1rem]'>Unity release with reset states 0.1.0</p>
+          <span className='text-white mt-1 ml-4 font-semibold'>Read more</span>
+          </div>
+      </div>
+      <div className='mt-40 md:mt-6'>
+        <h1>Build multiplayer <br className='hidden md:block' /> games in minutes</h1>
+        <p className='mt-4'>
+        Playroom provides scalable Multiplayer Backend & Cross-platform <br className='hidden md:block' /> integrations for web-based games with Zero Server code. 
+        </p>
+      </div>
+      {/* BUTTON */}
+       <button className='text-black mt-6 gradientBtn rounded-full p-6 px-10 text-[1.1rem] font-medium'>Get started for free</button>
+      {/* button */}
   </div>
-  {isOpen &&   <ul className='flex flex-col cursor-pointer gap-6 md:flex md:flex-row md:w-1/2 text-[1.4rem]  w-[90%] bg-[#0F0F10] mt-6 md:mt-0 p-6 rounded-md md:rounded-full md:justify-between mx-auto '>
-            <li>Development Kit</li>
-            <li>Pricing</li>
-            <li className='relative'><a href="">Features</a>
-            {isFeaturesClicked && <div className='bg-black absolute w-[300px]  -left-20 top-20 p-10 grid grid-cols-2 gap-10'>
-                <div>
-                    <h6>Serverless</h6>
-                    <p>A robust architecture to build with zero backend code</p>
-                </div>
-                <div>
-                    <h6>Serverless</h6>
-                    <p>A robust architecture to build with zero backend code</p>
-                </div>
-                <div>
-                    <h6>Serverless</h6>
-                    <p>A robust architecture to build with zero backend code</p>
-                </div>
-                <div>
-                    <h6>Serverless</h6>
-                    <p>A robust architecture to build with zero backend code</p>
-                </div>
-                
-             </div>}
-            </li>
-           
-            <li>Partners</li>
-            <li>Ressources</li>
-         </ul>}
-</nav>
-
-  )
+  {/* hero */}
+    </div>
+ )
 }
 
 export default Home
