@@ -4,6 +4,7 @@ import reactIcon from "../../assets/React-icon.svg"
 import editorMobileImg from "../../assets/image 36 (3).png"
 import editorMobileImg2 from "../../assets/editorMobile.png"
 import editorDesktopImg from "../../assets/editorbgdesktop.png"
+import regionImg from "../../assets/region.svg"
 const GetStarted = () => {
   return (
     <div className='p-4'>
@@ -92,7 +93,6 @@ const GetStarted = () => {
 
        </div>
      
-
        
     </div>
   )

@@ -10,6 +10,7 @@ export default {
     extend: {
       colors:{
         textGrey:'#858898',
+         smallTextColor:"#797B86",
         lightBlack:'#0D0D0E',
         primaryBorderColor:'#3F3F48'
       }

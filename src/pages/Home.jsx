@@ -4,6 +4,7 @@ import Navbar from '../componenets/Navbar'
 import Hero from '../componenets/Hero'
 import {BuiltForNextGeneration} from '../componenets/built-for-nextGeneration/BuiltForNextGeneration'
 import GetStarted from '../componenets/get-started-in-minute/GetStarted'
+import SaveDevelopment from '../componenets/save-dev/SaveDevelopment'
 const Home = () => {
 
 
@@ -16,6 +17,7 @@ const Home = () => {
         </div>
         <BuiltForNextGeneration/>
         <GetStarted />
+        <SaveDevelopment />
     </div>
  )
 }
