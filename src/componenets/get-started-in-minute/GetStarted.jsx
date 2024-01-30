@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from '../ui/Card'
 import reactIcon from "../../assets/React-icon.svg"
-import editorMobileImg from "../../assets/editorMobile.png"
+import editorMobileImg from "../../assets/image 36 (3).png"
+import editorMobileImg2 from "../../assets/editorMobile.png"
 import editorDesktopImg from "../../assets/editorbgdesktop.png"
 const GetStarted = () => {
   return (
@@ -90,6 +91,9 @@ const GetStarted = () => {
     <img className='w-full hidden md:block' src={editorDesktopImg} alt="" />
 
        </div>
+     
+
+       
     </div>
   )
 }
