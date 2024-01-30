@@ -13,6 +13,7 @@ export default {
          smallTextColor:"#797B86",
         lightBlack:'#0D0D0E',
         primaryBorderColor:'#3F3F48'
+       
       }
     },
   },

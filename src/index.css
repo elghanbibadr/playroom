@@ -14,28 +14,31 @@ body{
 }
 
 
-p{
-  @apply text-[1.4rem] leading-[20px] font-light text-textGrey md:text-[1.8rem] md:leading-[26px]
-}
 
 
-h1{
-  @apply text-[4.8rem] leading-[50px] tracking-[-1%] font-semibold lg:text-[6.8rem] lg:leading-[68px]
-}
+  p{
+    @apply text-[1.4rem] leading-[20px] font-light text-textGrey md:text-[1.8rem] md:leading-[26px]
+  }
+  
+  
+  h1{
+    @apply text-[4.8rem] leading-[50px] tracking-[-1%] font-semibold lg:text-[6.8rem] lg:leading-[68px]
+  }
+  
+  h2{
+    @apply text-[3rem] leading-[30px] font-medium lg:text-[4.8rem] lg:leading-[48px]
+  }
+  
+  
+  .gradientBtn {
+    background: linear-gradient(to bottom right, #C8A2FF, white);
+  }
+  
+  
+  .heroWrraper{
+   background-image: url(/src/assets/mobileherobg.png);
+   background-size: contain;
+   /* background-position: center; */
+   /* background-repeat: no-repeat; */
+  }
 
-h2{
-  @apply text-[3rem] leading-[30px] font-medium lg:text-[4.8rem] lg:leading-[48px]
-}
-
-
-.gradientBtn {
-  background: linear-gradient(to bottom right, #C8A2FF, white);
-}
-
-
-.heroWrraper{
- background-image: url(/src/assets/mobileherobg.png);
- background-size: contain;
- /* background-position: center; */
- /* background-repeat: no-repeat; */
-}

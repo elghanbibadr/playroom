@@ -5,20 +5,26 @@ import Hero from '../componenets/Hero'
 import {BuiltForNextGeneration} from '../componenets/built-for-nextGeneration/BuiltForNextGeneration'
 import GetStarted from '../componenets/get-started-in-minute/GetStarted'
 import SaveDevelopment from '../componenets/save-dev/SaveDevelopment'
+import Features from '../componenets/features/Features'
+import { Container } from '../componenets/ui/Container'
 const Home = () => {
 
 
  return (
-    <div>
+    <>
         <div className='p-10 heroWrraper z-10 relative'>
-          <Navbar/>
+          <Container><Navbar/></Container>
           <Hero/>
         <img className='w-full absolute left-0 right-0 bottom-0 h-[180px]' src={rectangleLight} alt="" />
         </div>
-        <BuiltForNextGeneration/>
+        <Container><BuiltForNextGeneration/></Container>
         <GetStarted />
-        <SaveDevelopment />
-    </div>
+        <Container>
+          <SaveDevelopment />
+        <Features/>
+
+        </Container>
+    </>
  )
 }
 
