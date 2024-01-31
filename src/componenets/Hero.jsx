@@ -3,8 +3,8 @@ const Hero = () => {
   return (
     <div className='md:text-center md:mt-40  pb-20'>
     <div>
-        <div className='flex items-center border-[1px] p-2 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
-        <p className='text-[1.1rem]'>Unity release with reset states 0.1.0</p>
+        <div className='flex items-center border-[1px] p-2 md:px-12 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
+        <p className='text-[1.3rem] font-normal md:mr-4'>Unity release with reset states 0.1.0</p>
         <span className='text-white mt-1 ml-4 font-semibold'>Read more</span>
         </div>
     </div>

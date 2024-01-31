@@ -23,7 +23,7 @@ const GetStarted = () => {
              <div className="text-center mt-20">
                      <h2>Get started in minutes <br className='hidden md:block' />  </h2>
                      <p className="my-6 md:mb-40">
-                     Simple API to set or get the state of game room. The state is automatically synced between all players and screens.        </p>
+                     Simple API to set or get the state of game room. The state is <br className='hidden md:block' /> automatically synced between all players and screens.        </p>
                    </div>
                     <Card className="w-full text-center md:w-[70%] md:mx-auto md:py-6">
                      <p className='text-white'>
