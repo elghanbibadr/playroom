@@ -41,6 +41,7 @@ h2{
     background-image: url(/src/assets/rectangleWithlightShadow.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   .featureMenu p {
@@ -59,4 +60,14 @@ h2{
 
 .resources{
   /* background: url(/src/assets/shadow.png); */
+}
+
+
+ul li{
+  list-style: none !important;
+}
+
+
+nav li {
+  font-weight: bold;
 }
