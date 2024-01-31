@@ -5,7 +5,7 @@ import closeIcon from "../assets/closeIcon.svg"
 const Navbar = () => {
     
     const [isOpen ,setIsOpen]=useState(false)
-    const [isFeaturesClicked,setIsFeaturesClicked]=useState(false)
+    const [isFeaturesClicked,setIsFeaturesClicked]=useState(true)
 
     useEffect(() => {
         const handleResize = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
             <li>Development Kit</li>
             <li>Pricing</li>
             <li className='relative'><a href="">Features</a>
-            {isFeaturesClicked && <div className='bg-black absolute w-[300px]  -left-20 top-20 p-10 grid grid-cols-2 gap-10'>
+            {isFeaturesClicked && <div className=' featureMenu absolute w-[400px] h-fit  rounded-2xl   right-[-16rem] hidden md:block border-[#3F3F48] border-[0.67px] top-20 p-14 md:grid grid-cols-2 gap-10'>
                 <div>
                     <h6>Serverless</h6>
                     <p>A robust architecture to build with zero backend code</p>
