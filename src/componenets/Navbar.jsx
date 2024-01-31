@@ -50,54 +50,54 @@ const Navbar = () => {
     handleItemClick(2)
               } } >Features
               
-              {isFeaturesClicked && <div className=' featureMenu absolute w-[500px] h-fit  rounded-2xl   right-[-16rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-10'>
+              {(clickedItem=== 2) && <div className=' featureMenu absolute w-[500px] h-fit  rounded-2xl   right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-10'>
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
+   
+
                     <div>
                         <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <p className='font-normal'>A robust architecture to build with zero backend code</p>
                     </div>
                     
                   </div>
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
                     <div>
-                        <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <h6>Web Multiplayer</h6>
+                        <p className='font-normal'>Build and ship 2D & 3D games across platforms</p>
                     </div>
                     
                   </div>
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
                     <div>
-                        <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <h6>Sync’d Objects</h6>
+                        <p className='font-normal'>Embeddable UI Components that speeds up development</p>
                     </div>
                     
                   </div>
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
                     <div>
-                        <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <h6>Stream Mode</h6>
+                        <p className='font-normal'>Embeddable UI Components that speeds up development</p>
                     </div>
                     
                   </div>
-                  
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
                     <div>
-                        <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <h6>Playtesting</h6>
+                        <p className='font-normal'>Workflow to improve multiplayer playtesting</p>
                     </div>
                     
                   </div>
-                  
                   <div className='flex gap-4 '>
-                  <Card className="h-[32px] w-[42px] rounded-xl"/>
+                  <Card className="h-[34px] w-[44px] rounded-[1rem] border-[1.4px] "/>
                     <div>
-                        <h6>Serverless</h6>
-                        <p>A robust architecture to build with zero backend code</p>
+                        <h6>Live</h6>
+                        <p className='font-normal'>Workflow to improve multiplayer playtesting</p>
                     </div>
                     
                   </div>
