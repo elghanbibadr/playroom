@@ -7,6 +7,7 @@ import GetStarted from '../componenets/get-started-in-minute/GetStarted'
 import SaveDevelopment from '../componenets/save-dev/SaveDevelopment'
 import Features from '../componenets/features/Features'
 import { Container } from '../componenets/ui/Container'
+import Resources from '../componenets/ressources/Resources'
 const Home = () => {
 
 
@@ -22,7 +23,7 @@ const Home = () => {
         <Container>
           <SaveDevelopment />
         <Features/>
-
+        <Resources />
         </Container>
     </>
  )
