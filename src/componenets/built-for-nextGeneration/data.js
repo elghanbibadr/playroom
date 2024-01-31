@@ -1,10 +1,10 @@
-import appstore from "../../assets/app-store1.png"
-import BunchLogo from "../../assets/Bunch-Logo 3.png"
-import readyPlayer from "../../assets/ready-player2.png"
-import discord from "../../assets/Discord-logo.png"
+import appstore from "../../assets/app-store.png"
+import BunchLogo from "../../assets/Bunch-Logo.png"
+import readyPlayer from "../../assets/readyplayer.png"
+import discord from "../../assets/Discord-logo1.png"
 import tiktok from "../../assets/TikTok-icon.png"
 import TwitchLogo from "../../assets/Twitch-logo.png"
-import crazygame from "../../assets/Variant_Light 1.png"
+import crazygame from "../../assets/crazygames.png"
 import poki from "../../assets/poki.png"
 export const data = [
     {

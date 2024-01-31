@@ -11,7 +11,7 @@ import lowcodeIcon from "../../assets/lowCodeIcon.svg"
 
 const SaveDevelopment = () => {
   return (
-    <div className='p-4 mt-40 lg:grid lg:grid-cols-2 lg:gap-8'>
+    <div className=' mt-40 lg:grid lg:grid-cols-2 lg:gap-8'>
            <div className="text-center  md:text-left md:self-center ">
         <h2>Save development & maintenance time</h2>
         <p className="my-5 lg:w-[80%]">

@@ -3,7 +3,7 @@ import ressorces from "../../assets/resourcesImg.svg"
 import Card from '../ui/Card'
 const Resources = () => {
   return (
-    <Card className="m-4 mt-20  md:grid md:grid-cols-2 md:gap-x-20 ">
+    <Card className=" mt-20  md:grid md:grid-cols-2 md:gap-x-20 ">
            <div className="text-center md:text-left   md:self-center ">
         <h2>Resources</h2>
         <p className="my-5 mx-auto ">
