@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <div className='md:text-center md:mt-40 pb-20'>
+    <div className='md:text-center md:mt-40  pb-20'>
     <div>
         <div className='flex items-center border-[1px] p-2 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
         <p className='text-[1.1rem]'>Unity release with reset states 0.1.0</p>
