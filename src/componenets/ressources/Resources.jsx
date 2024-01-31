@@ -8,7 +8,7 @@ const Resources = () => {
         <h2>Resources</h2>
         <p className="my-5 mx-auto ">
         Never start from Zero. A growing library of open-source game templates and cross-platform resources with Playroom to help you quick start your next hit game.        </p>
-        <button className='text-black mt-6 gradientBtn  rounded-full p-6 px-10 text-[1.1rem] md:text-[1.4rem] font-medium'>View Templates</button>
+        <button className='text-black my-6 gradientBtn  rounded-full p-6 px-10 text-[1.1rem] md:text-[1.4rem] font-medium'>View Templates</button>
       </div>
    <img className=' w-full h-full' src={ressorces} alt="" />
 

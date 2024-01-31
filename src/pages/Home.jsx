@@ -8,6 +8,7 @@ import SaveDevelopment from '../componenets/save-dev/SaveDevelopment'
 import Features from '../componenets/features/Features'
 import { Container } from '../componenets/ui/Container'
 import Resources from '../componenets/ressources/Resources'
+import { LetsConnect } from '../componenets/lets-connect/LetsConnect'
 const Home = () => {
 
 
@@ -24,6 +25,7 @@ const Home = () => {
           <SaveDevelopment />
         <Features/>
         <Resources />
+        <LetsConnect />
         </Container>
     </>
  )

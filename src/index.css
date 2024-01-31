@@ -12,7 +12,12 @@ body{
   font-family: "Noto Sans", sans-serif;
  background-color: black;
 }
-
+  h2,h3,h6{
+    color: white;
+  }
+h2{
+  @apply text-[3rem] leading-[30px] font-medium lg:text-[4.8rem] lg:leading-[48px]
+}
 
 
 
@@ -24,10 +29,7 @@ body{
   h1{
     @apply text-[4.8rem] leading-[50px] tracking-[-1%] font-semibold lg:text-[6.8rem] lg:leading-[68px]
   }
-  
-  h2{
-    @apply text-[3rem] leading-[30px] font-medium lg:text-[4.8rem] lg:leading-[48px]
-  }
+
   
   
   .gradientBtn {
