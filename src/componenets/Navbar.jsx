@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import hamburgerMenu from "../assets/menuHamburger.svg"
-import logo from "../assets/playroomlogo.png"
+import logoIcon from "../assets/logoIcon.svg"
 import closeIcon from "../assets/closeIcon.svg"
 import Card from './ui/Card'
 const Navbar = () => {
@@ -33,19 +33,20 @@ const Navbar = () => {
   return (
 
     <nav className='md:flex md:justify-between md:gap-6 md:items-center ' >
-      <img className='hidden md:block' src={logo} alt="playroom logo" />
+      <img className='hidden md:block' src={logoIcon} alt="playroom logo" />
 
-      <div className='flex justify-between items-center  border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center  md:w-1/2 mx-auto mt-6  px-8 py-6 rounded-full'>
-        <img className='h-[24px] md:hidden' src={logo} alt="playroom logo" />
-        {!isOpen && <img onClick={() => setIsOpen(true)} className='md:hidden h-6' src={hamburgerMenu} alt="hamburger menu" />}
-        {isOpen && <img onClick={() => setIsOpen(false)} className='md:hidden h-8' src={closeIcon} alt="close icon" />}
+      <div className='flex justify-between items-center  border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center  md:w-1/2 mx-auto mt-6  px-10 py-6 rounded-full'>
+        <img className=' md:hidden' src={logoIcon} alt="playroom logo" />
+
+        {!isOpen && <img onClick={() => setIsOpen(true)} className='md:hidden h-[13px] w-[20px]' src={hamburgerMenu} alt="hamburger menu" />}
+        {isOpen && <img onClick={() => setIsOpen(false)} className='md:hidden h-[30px] w-[20px]' src={closeIcon} alt="close icon" />}
 
 
       </div>
-      {isOpen && <ul className='flex flex-col cursor-pointer gap-6 md:flex md:flex-row md:gap-x-10  text-[1.4rem]  bg-[#0F0F10] mt-6 md:mt-0 p-6 py-5  md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'>
-        <li className={`rounded-full text-nowrap md:p-2 lg:py-4 lg:px-8 ${clickedItem === 1 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(1)}>Development Kit</li>
-        <li className={`rounded-full md:p-2 lg:py-4 lg:px-8 ${clickedItem === 3 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(3)}>Pricing</li>
-        <li className={`rounded-full relative md:p-2 lg:py-4 lg:px-8  ${clickedItem === 2 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={(prv) => {
+      {isOpen && <ul className='flex flex-col md:w-[76%] lg:w-auto cursor-pointer gap-6 md:flex md:flex-row md:gap-0  text-[1.4rem]  bg-[#0F0F10] mt-6 md:mt-0 p-6 py-5  md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'>
+        <li className={`rounded-full text-nowrap md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 1 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(1)}>Development Kit</li>
+        <li className={`rounded-full md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(3)}>Pricing</li>
+        <li className={`rounded-full relative md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11  ${clickedItem === 2 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={(prv) => {
           setIsFeaturesClicked(true)
           handleItemClick(2)
         }} >Features
@@ -105,8 +106,8 @@ const Navbar = () => {
 
           </div>}
         </li>
-        <li className={`rounded-full md:p-2 lg:py-4 lg:px-8 ${clickedItem === 5 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(5)}>Partners</li>
-        <li className={`rounded-full md:p-2 lg:py-4 lg:px-8 ${clickedItem === 6 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(6)}>Ressources</li>
+        <li className={`rounded-full md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 5 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(5)}>Partners</li>
+        <li className={`rounded-full md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11  ${clickedItem === 6 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(6)}>Ressources</li>
       </ul>}
 
 

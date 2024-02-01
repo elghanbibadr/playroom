@@ -69,5 +69,14 @@ ul li{
 
 
 nav li {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 13px !important;
+  Line-height:
+12.32px;
+letter-spacing: -1%;
+}
+
+
+img{
+  cursor: pointer;
 }
