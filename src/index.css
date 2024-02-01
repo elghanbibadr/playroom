@@ -30,11 +30,14 @@ h2{
     @apply text-[4.8rem] leading-[50px] tracking-[-1%] font-semibold lg:text-[6.8rem] lg:leading-[68px]
   }
 
-  
+  .small-text{
+    @apply text-[1.2rem] leading-[13.5px] font-normal text-[#797B86]
+  }
   
   .gradientBtn {
     background: linear-gradient(to bottom right, #C8A2FF, white);
   }
+  
   
 
   .featureMenu{
@@ -63,6 +66,8 @@ h2{
 }
 
 
+/* GENERAL STYLES */
+
 ul li{
   list-style: none !important;
 }
@@ -80,3 +85,5 @@ letter-spacing: -1%;
 img{
   cursor: pointer;
 }
+
+

@@ -15,7 +15,7 @@ const Home = () => {
 
  return (
     <>
-        <div className='p-10 heroWrraper z-10 relative'>
+        <div className='p-4 heroWrraper z-10 relative'>
           <Container>
             <Navbar/>
             <Hero/>

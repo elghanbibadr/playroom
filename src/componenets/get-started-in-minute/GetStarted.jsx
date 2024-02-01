@@ -15,78 +15,41 @@ import { Container } from '../ui/Container'
 import pixijsIcon from "../../assets/PixijsIcon.svg"
 import playcanvasIcon from "../../assets/playcanvasIcon.svg"
 
+const techCards = [
+  { icon: reactIcon, title: 'React' },
+  { icon: unityIcon, title: 'Unity' },
+  { icon: threejsIcon, title: 'Threejs' },
+  { icon: godotIcon, title: 'Godot' },
+  { icon: cocosIcon, title: 'Cocos' },
+  { icon: phaserIcon, title: 'Phaser' },
+  { icon: pixijsIcon, title: 'PixiJs' },
+  { icon: webxrIcon, title: 'WebXR' },
+  { icon: playcanvasIcon, title: 'Playcanvas' },
+];
+
 const GetStarted = () => {
   return (
     <Container>
 
     <div className='p-4'>
              <div className="text-center mt-20">
-                     <h2>Get started in minutes <br className='hidden md:block' />  </h2>
-                     <p className="my-6 md:mb-40">
+                     <h2>Get started in <br className='block md:hidden' />  minutes  </h2>
+                     <p className="my-6 md:mb-10">
                      Simple API to set or get the state of game room. The state is <br className='hidden md:block' /> automatically synced between all players and screens.        </p>
                    </div>
-                    <Card className="w-full text-center md:w-[70%] md:mx-auto md:py-6">
-                     <p className='text-white'>
+                    <Card className="w-full rounded-[16px] text-center md:w-[75%] md:mx-auto md:py-8">
+                     <p className='text-white sm:text-[1.4rem] font-extralight text-[1.2rem] md:text-[2rem]'>
                      npm install --save playroomkit react react-dom
                      </p>
                     </Card>
-                    <div className='mt-10 grid grid-cols-3 gap-3 p-4 md:flex md:justify-between  lg:w-[70%] lg:mx-auto '>
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={reactIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>React </h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={unityIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Unity</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={threejsIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Threejs</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={godotIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Godot</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={cocosIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Cocos </h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={phaserIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Phaser</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={pixijsIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>PixiJs</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={webxrIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>WebXR</h6>
-                     </div>
-                     {/* card */}
-                   {/* card */}
-                   <div className="h-[90px] border-[#3E3E47] border-[0.87px] md:h-[34px] w-full  md:px-1 md:py-1 flex items-center md:gap-2 rounded-xl justify-center">
-                <img className='md:h-[14px] md:w-[14px]' src={playcanvasIcon} alt="react icon" />
-                <h6 className='text-white font-bold hidden md:block'>Playcanvas</h6>
-                     </div>
-                     {/* card */}
-                   
-                    </div>
+                    <div className='mt-2 grid grid-cols-3 gap-3 p-4 md:flex md:justify-between  lg:w-[70%] lg:mx-auto '>
+      {techCards.map((card, index) => (
+        <div key={index} className="h-[90px] w-fit border-[#3E3E47] border-[0.87px] md:h-[34px] w-full md:min-w-fit md:w-full md:px-2 md:py-1 flex items-center md:gap-2 rounded-xl justify-center ">
+          <img className='md:h-[16px] md:w-[16px] ' src={card.icon} alt={`${card.title} icon`} />
+          <h6 className='text-white font-bold hidden md:block'>{card.title}</h6>
+        </div>
+      ))}
+    </div>
 
 
        {/* EDITOR */}
