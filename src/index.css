@@ -22,7 +22,7 @@ h2{
 
 
   p{
-    @apply text-[1.4rem] leading-[20px] font-light text-textGrey md:text-[1.8rem] md:leading-[26px]
+    @apply text-[1.4rem] leading-[20px] font-normal text-textGrey md:text-[1.6rem] md:leading-[22px]
   }
   
   
