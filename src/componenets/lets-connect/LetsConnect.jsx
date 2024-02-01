@@ -1,12 +1,22 @@
 import Card from "../ui/Card"
+
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 const contactCards = [
   { title: 'Get in Touch', bgColor: 'mb-6', icon: null },
   { title: 'Discord', bgColor: '', icon: null },
 ];
 
 export const LetsConnect = () => {
+
+  const ref=useRef(null)
+  const {scrollYProgress}=useScroll({
+    target:ref,
+    offset:[' 0 1',' 1.33 1'],
+  })
   return (
-    <div className="mt-20 md:mt-64 p-4">
+    <motion.div ref={ref} style={{scale:scrollYProgress,opacity:scrollYProgress}} className="mt-20 md:mt-64 p-4">
+      
            <div className="text-center   ">
         <h2 className="text-white">Let’s Connect</h2>
         <p className="my-5 mx-auto ">
@@ -22,7 +32,7 @@ export const LetsConnect = () => {
         </Card>
       ))}
     </div>
-    </div>
+    </motion.div>
   )
 }
 

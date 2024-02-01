@@ -81,14 +81,14 @@ const Navbar = () => {
            variants={container}
            initial="hidden"
            animate="visible"
-           className='featureMenu container absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-10 lg:p-16'
+           className='featureMenu container absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-14 lg:p-16'
          >
            {featureSubmenu.map((feature, index) => (
              <motion.div key={index} variants={item} className='flex gap-4'>
-               <Card className="h-[34px] w-[39px] rounded-[1rem] border-[1.4px]" />
+               <Card className="h-[32px] w-[39px] rounded-[1rem] border-[1.4px]" />
                <div>
-                 <h6>{feature.title}</h6>
-                 <p className='font-normal'>{feature.description}</p>
+                 <h6 className='mb-2'>{feature.title}</h6>
+                 <span className='text-[1.1rem] font-medium text-[#595959]'>{feature.description}</span>
                </div>
              </motion.div>
            ))}

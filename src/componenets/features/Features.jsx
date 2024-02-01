@@ -6,6 +6,7 @@ import gamepadIcon from "../../assets/gamepad.svg"
 import playtestingIcon from "../../assets/playtestting.svg"
 import chatIcon from "../../assets/chat.svg"
 import Button from "../ui/Button"
+import { motion } from "framer-motion"
 
 const featureCardsData=[
     {
@@ -47,7 +48,11 @@ const featureCardsData=[
 ]
 const Features = () => {
   return (
-    <div >
+    <div 
+  
+    >
+      
+    
           <div className="text-center mt-20 md:mt-40 md:self-center ">
         <h2>Ship faster with easy-to-use <br className='hidden md:block' /> integrations & toolkit</h2>
         <p className="my-5 mx-auto lg:w-[50%]">
