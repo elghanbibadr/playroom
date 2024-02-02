@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
 
     <nav className='md:flex md:justify-between md:gap-6 md:items-center ' >
-      <img className='hidden md:block md:w-[134px] md:h-[31px]' src={logoIcon} alt="playroom logo" />
+      <img className='hidden md:block md:w-[138px] md:h-[38px]' src={logoIcon} alt="playroom logo" />
 
       <div className='flex justify-between items-center  border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center  md:w-1/2 mx-auto mt-6  px-10 py-6 rounded-full'>
         <img className=' md:hidden' src={logoIcon} alt="playroom logo" />
@@ -66,7 +66,7 @@ const Navbar = () => {
       </div>
       {isOpen && <ul     variants={container}
            initial="hidden"
-           animate="visible" className='flex py-6 md:py-4 flex-col md:w-[70%] lg:w-auto lg:relative lg:right-16 lg:mx-auto cursor-pointer gap-6 md:flex md:flex-row md:gap-0  text-[1.4rem]  bg-[#0F0F10] mt-6 md:mt-0 p-6   md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'>
+           animate="visible" className='flex py-6 md:py-4 flex-col md:w-[70%] lg:w-auto lg:relative lg:right-24 lg:mx-auto cursor-pointer gap-6 md:flex md:flex-row md:gap-0  text-[1.4rem]  bg-[#0F0F10] mt-6 md:mt-0 p-6   md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'>
         <li variants={item} className={`rounded-full my-3 md:my-0 text-nowrap hover:text-[#efefefc8] transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 1 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(1)}>Development Kit</li>
         <li variants={item} className={`rounded-full my-3 md:my-0 md:p-2  hover:text-[#efefefc8] transition-colors duration-150 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} onClick={() => handleItemClick(3)}>Pricing</li>
         <li onMouseEnter={() => handleItemClick(2)}           onMouseLeave={() => setClickedItem(undefined)}
