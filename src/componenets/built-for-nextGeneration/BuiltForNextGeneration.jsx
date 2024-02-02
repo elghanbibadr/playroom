@@ -38,7 +38,7 @@ export const BuiltForNextGeneration = () => {
             transition={{ duration: 0.3 }}
           >
             {/* {selectedTabId ? selectedTabId : "😋"} */}
-           {selectedTabId  && <video className="mt-10 mb-[100px] rounded-2xl"  autoPlay muted loop>
+           {selectedTabId  && <video className="mt-10 mb-[20px] rounded-2xl"  autoPlay muted loop>
            <source src={video1} type="video/mp4" />
             Your browser does not support the video tag.
            </video> }
