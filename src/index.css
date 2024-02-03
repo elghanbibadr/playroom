@@ -27,7 +27,7 @@ h2{
   
   
   h1{
-    @apply text-[4.3rem] leading-[50px] tracking-[-1%] font-semibold lg:text-[6.4rem] lg:leading-[68px]
+    @apply text-[4.3rem] leading-[42px] tracking-[-1%] font-semibold lg:text-[6.4rem]  lg:leading-[60px]
   }
 
   .small-text{

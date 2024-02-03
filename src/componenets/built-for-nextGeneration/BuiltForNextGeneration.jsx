@@ -22,7 +22,8 @@ export const BuiltForNextGeneration = () => {
 
       <div className="grid mt-10  grid-cols-2  mx-auto place-content-center justify-center items-center content-center gap-3 md:grid-cols-5">
         {data.map((item) => {
-          return <BuiltForNextGenerationCard  key={item.id} selectedTabId={selectedTabId} id={item.id}  onClick={() => setSelectedTabId(item.id)}  className={item.id === selectedTabId ? "selected" : ""} id={item.id} img1Src={item.img1Src} img2Src={item.img2Src} title={item.title} desc={item.desc} />
+          return <BuiltForNextGenerationCard  key={item.id} selectedTabId={selectedTabId} id={item.id}  onClick={() => {setSelectedTabId(item.id)
+             console.log("clicked")}}  className={item.id === selectedTabId ? "selected" : ""} id={item.id} img1Src={item.img1Src} img2Src={item.img2Src} title={item.title} desc={item.desc} />
         })}
       </div>
 
