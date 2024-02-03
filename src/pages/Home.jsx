@@ -15,7 +15,7 @@ const Home = () => {
 
  return (
     <>
-        <div className='p-4 heroWrraper md:h-[100vh] z-10 relative'>
+        <div className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'>
           <Container>
             <Navbar/>
             <Hero/>

@@ -3,7 +3,7 @@ import Button from "./ui/Button"
 const Hero = () => {
   return (
     // md:mt-40  pb-20 mb-[160px]
-    <div className='md:text-center  mb-20 md:mt-[17vh]  '>
+    <div className='md:text-center   mb-20 md:mt-[17vh]  '>
     <div>
         <div className='flex text-nowrap items-center border-[1px] p-2 md:py-1 md:px-12 lg:px-16 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
         <p className='text-[1rem] font-normal md:mr-4 md:text-[1.2rem]'>Unity release with v <span className="hidden md:inline-block">reset states</span> 0.1.0</p>
