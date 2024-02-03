@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
     </div>
     {/* mt-40 */}
-    <div className='mt-20  md:mt-4 p-5'>
+    <div className='mt-32 md:mt-4 p-5'>
       <h1>Build multiplayer <br className='hidden md:block' /> games in minutes</h1>
       <p className='mt-4 md:my-[3vh]'>
       Playroom provides scalable Multiplayer Backend & Cross-platform <br className='hidden md:block' /> integrations for web-based games with Zero Server code. 
