@@ -1,8 +1,6 @@
-import { motion } from "framer-motion"
 import Button from "./ui/Button"
 const Hero = () => {
   return (
-    // md:mt-40  pb-20 mb-[160px]
     <div className='md:text-center   mb-20 md:mt-[17vh]  '>
     <div>
         <div className='flex text-nowrap items-center border-[1px] p-2 md:py-1 md:px-12 lg:px-16 rounded-full w-full mt-6 md:w-fit md:mx-auto justify-between  px-8 border-[#2D2D2D]'>
@@ -10,7 +8,6 @@ const Hero = () => {
         <span className='text-white  ml-4 md:mt-1 text-[1.1rem] hover:text-[#efefefc8] transition-colors duration-150  cursor-pointer font-semibold'>Read more</span>
         </div>
     </div>
-    {/* mt-40 */}
     <div className='mt-32 md:mt-4 p-5'>
       <h1>Build multiplayer <br className='hidden md:block' /> games in minutes</h1>
       <p className='mt-4 md:my-[3vh]'>

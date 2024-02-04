@@ -2,8 +2,6 @@
 import { data } from "./data";
 import BuiltForNextGenerationCard from "./BuiltForNextGenerationCard";
 
-import demo from "../../assets/mobileDemoCarton.svg"
-import demodesktop from "../../assets/demoCartonDesktop.svg"
 import video1 from "../../assets/video1.mp4"
 import { useState } from "react";
 import { motion,AnimatePresence } from "framer-motion";
@@ -22,14 +20,12 @@ export const BuiltForNextGeneration = () => {
 
       <div className="grid mt-10  grid-cols-2  mx-auto place-content-center justify-center items-center content-center gap-3 md:grid-cols-5">
         {data.map((item) => {
-          return <BuiltForNextGenerationCard  key={item.id} selectedTabId={selectedTabId} id={item.id}  onClick={() => {setSelectedTabId(item.id)
-             console.log("clicked")}}  className={item.id === selectedTabId ? "selected" : ""}  img1Src={item.img1Src} img2Src={item.img2Src} title={item.title} desc={item.desc} />
+          return <BuiltForNextGenerationCard  key={item.id} selectedTabId={selectedTabId} id={item.id}  onClick={() => {setSelectedTabId(item.id)}}  className={item.id === selectedTabId ? "selected" : ""}  img1Src={item.img1Src} img2Src={item.img2Src} title={item.title} desc={item.desc} />
         })}
       </div>
 
      
-  {/* <img className="my-6 w-full  md:hidden" src={demo} alt="demo carton image for mobile" />
-  <img className="my-6 hidden md:block" src={demodesktop} alt="demo carton image for desktop" /> */}
+ 
      <AnimatePresence mode="wait">
           <motion.div
             key={selectedTabId ? selectedTabId : "empty"}
@@ -38,13 +34,11 @@ export const BuiltForNextGeneration = () => {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            {/* {selectedTabId ? selectedTabId : "😋"} */}
            {selectedTabId  && <video className="mt-10 mb-[20px] rounded-2xl"  autoPlay muted loop>
            <source src={video1} type="video/mp4" />
             Your browser does not support the video tag.
            </video> }
-           {/* {selectedTabId === 2 && <img className="my-6 " src={demodesktop} alt="demo carton image for desktop" /> } */}
-       {/* <h1>{selectedTabId}</h1> */}
+ 
           </motion.div>
         </AnimatePresence>
  

@@ -9,6 +9,35 @@ import lowlatencyicon from "../../assets/lowlatencyIcon.svg"
 import earthIcon from "../../assets/earthIcon.svg"
 import lowcodeIcon from "../../assets/lowCodeIcon.svg" 
 import Button from '../ui/Button'
+import { SaveDeveloopmentItemCard } from './SaveDeveloopmentItemCard'
+
+export const saveDevCardsData = [
+  {
+    image: noBackendImage,
+    icon: noBackendIcon,
+    title: "No Backend",
+    description: "Get people together for deeper casual games",
+  },
+  {
+    image: region,
+    icon: earthIcon,
+    title: "Region: Earth",
+    description: "Get people together for deeper casual games",
+    className: "md:col-start-1 md:col-end-2 md:row-start-2",
+  },
+  {
+    image: lowlatencyImg,
+    icon: lowlatencyicon,
+    title: "Low Latency",
+    description: "Get people together for deeper casual games",
+  },
+  {
+    image: insertCoin,
+    icon: lowcodeIcon,
+    title: "Low code SDK",
+    description: "Get people together for deeper casual games",
+  },
+];
 const SaveDevelopment = () => {
   return (
     <div 
@@ -24,32 +53,9 @@ const SaveDevelopment = () => {
 
 <div className='sm:grid sm:grid-cols-2 mt-10 sm:gap-3 '>
     
-        <Card className="w-full mb-4 md:px-8   md:w-full px-4 py-10">
-        <img className='hidden md:block h-[120px] mb-12' src={noBackendImage} alt="" />
-        <img className='' src={noBackendIcon} alt="" />
-        <h6 className='font-bold text-[1.4rem] my-2'>No Backend</h6>
-        <span className='text-[1.2rem] text-smallTextColor'>Get people together for deeper casual games</span>
-        </Card>
-      
-        <Card className="w-full mb-4 md:px-8 md:col-start-1 md:col-end-2 md:row-start-2  md:w-full px-4 py-10">
-        <img className='hidden md:block h-[120px] mb-12' src={region} alt=""/>
-        <img src={earthIcon} alt=""/>
-        <h6 className='font-bold text-[1.4rem] my-2'>Region:Earth</h6>
-        <span className='text-[1.2rem] text-smallTextColor'>Get people together for deeper casual games</span>
-        </Card>
-        <Card className="w-full mb-4 md:px-8   md:w-full px-4 py-10">
-        <img className='hidden md:block h-[120px] mb-12' src={lowlatencyImg} alt="" />
-        <img src={lowlatencyicon} alt="" />
-
-        <h6 className='font-bold text-[1.4rem] my-2'>Low Latency</h6>
-        <span className='text-[1.2rem] text-smallTextColor'>Get people together for deeper casual games</span>
-        </Card>
-        <Card className="w-full mb-4 md:px-8   md:w-full px-4 py-10">
-        <img className='hidden md:block h-[120px] mb-12' src={insertCoin} alt="" />
-        <img src={lowcodeIcon} alt="" />
-        <h6 className='font-bold text-[1.4rem] my-2'>Low code SDK</h6>
-        <span className='text-[1.2rem] text-smallTextColor'>Get people together for deeper casual games</span>
-        </Card>
+{saveDevCardsData.map((feature, index) => (
+      <SaveDeveloopmentItemCard key={index} {...feature} />
+    ))}
 </div>
 
 
