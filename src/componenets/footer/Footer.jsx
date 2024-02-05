@@ -1,4 +1,6 @@
 import footerShadowLightImg from "../../assets/footerLightShadow.svg"
+
+
 export const Footer = () => {
   return (
     <footer>

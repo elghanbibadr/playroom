@@ -5,8 +5,8 @@ import closeIcon from "../assets/closeIcon.svg"
 import { featureSubmenu } from './data/ItemsData';
 import FeatureSubmenuLinkItem from './ui/FeatureSubmenuLinkItem';
 import NavLink from './ui/NavLink';
+
 const Navbar = () => {
- 
  
 
   const [isOpen, setIsOpen] = useState(false)
@@ -52,8 +52,9 @@ const Navbar = () => {
         Pricing
         </NavLink>
       
-        <li onMouseEnter={() => handleItemClick(3)}           onMouseLeave={() => setClickedItem(undefined)}
- className={`rounded-full my-3 md:my-0 relative  hover:text-[#efefefc8] transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11  ${clickedItem === 3 ? 'md:border-[#8C72F4] md:border-[1px]' : ''}`} 
+        <li onMouseEnter={() => handleItemClick(3)}           
+        // onMouseLeave={() => setClickedItem(undefined)}
+ className={`rounded-full my-3 md:my-0 relative  hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11  ${clickedItem === 3 ? 'md:border-[#8C72F4] ' : ''}`} 
  >Features
 
           {(clickedItem === 3)
