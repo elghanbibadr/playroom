@@ -4,11 +4,11 @@ import logoIcon from "../assets/logoIcon.svg"
 import closeIcon from "../assets/closeIcon.svg"
 import { featureSubmenu } from './data/ItemsData';
 import FeatureSubmenuLinkItem from './ui/FeatureSubmenuLinkItem';
-import NavLink from './ui/NavLink';
+import NavItem from './ui/NavLink';
+import { NavLink,Link } from 'react-router-dom';
+
 
 const Navbar = () => {
- 
-
   const [isOpen, setIsOpen] = useState(false)
   const [clickedItem, setClickedItem] = useState(null);
 
@@ -29,33 +29,34 @@ const Navbar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []); 
-  return (
 
+
+
+  return (
     <nav className='md:flex md:justify-between md:gap-6 md:items-center ' >
       <img className='hidden md:block md:w-[138px] md:h-[38px]' src={logoIcon} alt="playroom logo" />
-
       <div className='flex justify-between items-center  border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center  md:w-1/2 mx-auto mt-6  px-10 py-6 rounded-full'>
         <img className=' md:hidden' src={logoIcon} alt="playroom logo" />
 
         {!isOpen && <img onClick={() => setIsOpen(true)} className='md:hidden h-[13px] w-[20px]' src={hamburgerMenu} alt="hamburger menu" />}
         {isOpen && <img onClick={() => setIsOpen(false)} className='md:hidden h-[30px] w-[20px]' src={closeIcon} alt="close icon" />}
-
-
       </div>
       {isOpen && <ul    
            className='flex py-6 md:py-4 flex-col md:w-[70%] lg:w-auto lg:relative lg:right-24 lg:mx-auto cursor-pointer gap-6 md:flex md:flex-row md:gap-0  text-[1.4rem]  bg-[#0F0F10] mt-6 md:mt-0 p-6   md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'>
-       
-        <NavLink itemIndex={1} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
-        Development Kit
-        </NavLink>
-        <NavLink itemIndex={2} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
-        Pricing
-        </NavLink>
+      
+        <NavItem itemIndex={1} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
+        {/* <NavLink to="/dev"> */}
+          Development Kit
+          {/* </NavLink> */}
+        </NavItem>
+        <NavItem  itemIndex={2} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
+          <Link to="/pricing">Pricing</Link>
+        </NavItem>
       
         <li onMouseEnter={() => handleItemClick(3)}           
         // onMouseLeave={() => setClickedItem(undefined)}
  className={`rounded-full my-3 md:my-0 relative  hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11  ${clickedItem === 3 ? 'md:border-[#8C72F4] ' : ''}`} 
- >Features
+ ><Link to="features">Features</Link>
 
           {(clickedItem === 3)
            && 
@@ -69,12 +70,13 @@ const Navbar = () => {
          </div>
           }
         </li>
-        <NavLink itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
-        Partners
-        </NavLink>
-        <NavLink itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
-        Ressources
-        </NavLink>
+        <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
+          Partners
+        </NavItem>
+          <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
+           <Link to="resources">Resources</Link>
+          </NavItem>
+       
       </ul>}
 
 
