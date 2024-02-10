@@ -74,7 +74,7 @@ const Navbar = () => {
           Partners
         </NavItem>
           <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}  >
-           <Link to="resources">Resources</Link>
+           <Link to="/resources">Resources</Link>
           </NavItem>
        
       </ul>}

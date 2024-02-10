@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 
 import Pricing from './pages/Pricing/Pricing';
-import Resources from './pages/resources/Resources';
 import Features from './pages/features/Features';
+import ResourcesPage from './pages/ResourcesPage';
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/features" element={<Features/>} />
-        <Route path="/resources" element={<Resources/>} />
+        <Route path="/resources" element={<ResourcesPage/>} />
       </Routes>
 
     </Router>
