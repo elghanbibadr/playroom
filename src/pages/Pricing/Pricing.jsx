@@ -194,19 +194,23 @@ const Pricing = () => {
                </p>
 
 
-              <div className="md:grid mt-20 md:mt-40  md:grid-cols-3 ">
+              <div className="md:grid sm:w-[80%] sm:mx-auto md:w-full lg:w-[90%] mt-20 md:mt-40   md:grid-cols-3 md:grid-rows-auto ">
                 <div>
                   <PackagesList packageOffres={packageOffresData1} packageName="Multiplayer Services" />
                   <PackagesList packageOffres={packageOffresData2} packageName="Basic Modules & UI Kits" />
                   <PackagesList packageOffres={packageOffresData3} packageName="Pro Modules & UI Kits (Usage based pricing)" />
                   <PackagesList packageOffres={packageOffresData4} packageName="Cross-platform Integrations (Custom pricing)" />
                 </div>
-                <div className="bg-[#1B1125]  rounded-3xl h-full">
+                <div className="bg-[#1B1125] rounded-3xl py-6 md:py-0 h-full">
                   {/* <h1>hello world</h1> */}
                   <PackagesList className=" text-white" packageOffres={packageOffresData5} packageName="Playroom" hasBorder={false} />
-                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData6} packageName=" " hasBorder={false}  />
-                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData7} packageName=" " hasBorder={false}  />
-                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData8} packageName=" " hasBorder={false}  />
+                  <PackagesList className=" text-white" packageOffres={packageOffresData6} packageName="" hasBorder={false} />
+                  <PackagesList className=" text-white" packageOffres={packageOffresData7} packageName="" hasBorder={false} />
+                  <PackagesList className=" text-white" packageOffres={packageOffresData8} packageName="" hasBorder={false} />
+                  {/* <PackagesList className=" text-white py-20" packageOffres={packageOffresData6} packageName="" hasBorder={false}  />
+                  {/* <PackagesList className=" text-white py-20" packageOffres={packageOffresData6} packageName="" hasBorder={false}  />
+                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData7} packageName="" hasBorder={false}  />
+                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData8} packageName="" hasBorder={false}  /> */}
 
                 </div>
                 <div>
