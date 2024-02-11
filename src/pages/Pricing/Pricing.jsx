@@ -170,7 +170,7 @@ const packageOffresData11= [
 
 const Pricing = () => {
   return (
-    <Container className="bg-black  p-4">
+    <Container>
         <div className="heroWrraper">
           <Navbar/>
           <div className='mt-32 text-left md:text-center  p-5'>
@@ -209,10 +209,7 @@ const Pricing = () => {
                   <PackagesList className=" text-white" packageOffres={packageOffresData6} packageName="" hasBorder={false} />
                   <PackagesList className=" text-white" packageOffres={packageOffresData7} packageName="" hasBorder={false} />
                   <PackagesList className=" text-white" packageOffres={packageOffresData8} packageName="" hasBorder={false} />
-                  {/* <PackagesList className=" text-white py-20" packageOffres={packageOffresData6} packageName="" hasBorder={false}  />
-                  {/* <PackagesList className=" text-white py-20" packageOffres={packageOffresData6} packageName="" hasBorder={false}  />
-                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData7} packageName="" hasBorder={false}  />
-                  <PackagesList className=" text-white py-20" packageOffres={packageOffresData8} packageName="" hasBorder={false}  /> */}
+               
 
                 </div>
                 <div>

@@ -10,7 +10,7 @@ import ressourceImg6 from "../assets/ressourcesimg6.png"
 import ressourceImg7 from "../assets/ressourcesimg7.png"
 import ressourceImg8 from "../assets/ressourcesimg8.png"
 import ressourceImg9 from "../assets/ressrourceImg9.png"
-
+import HireDeveloperCard from "../componenets/ressroucesPageComponents/HireDeveloperCard"
 
 const ressourcesListImages=[
 ressourceImg9,
@@ -25,8 +25,12 @@ ressourceImg8,
 ]
 const ResourcesPage = () => {
   return (
-    <div className="heroWrraper p-4">
+    <>
+    
+    
+    
       <Container>
+    <div className="heroWrraper ">
         <Navbar/>
         <div className=" text-left md:text-center mt-20 md:mt-40">
           <h2>Resources</h2>
@@ -37,20 +41,12 @@ const ResourcesPage = () => {
         <div className="mt-20 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-10">
         {ressourcesListImages.map((src,index) => {
           return <ResscourcesCard key={index} imgSrc={src} />
-        })}
-        {/* <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard />
-        <ResscourcesCard /> */}
-
+        })}  
         </div>
+        </div>
+      <HireDeveloperCard />
       </Container>
-    </div>
+    </>
   )
 }
 
