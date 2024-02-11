@@ -60,14 +60,16 @@ const Navbar = () => {
           <NavItem itemIndex={1} handleItemClick={handleItemClick} clickedItem={clickedItem}>
             Development Kit
           </NavItem>
-          <NavItem itemIndex={2} handleItemClick={handleItemClick} clickedItem={clickedItem}>
-            <Link to="/pricing">Pricing</Link>
-          </NavItem>
+          <Link to="/pricing">
+            <NavItem itemIndex={2} handleItemClick={handleItemClick} clickedItem={clickedItem}>
+            Pricing
+            </NavItem>
+          </Link>
           <li
             onMouseEnter={() => handleItemClick(3)}
             className={`rounded-full my-3 md:my-0 relative hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4]' : ''}`}
           >
-            <Link to="features">Features</Link>
+            <Link to="/features">Features</Link>
             {clickedItem === 3 && (
               <div
                 className='featureMenu absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-14 lg:p-16'
@@ -81,9 +83,11 @@ const Navbar = () => {
           <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
             Partners
           </NavItem>
-          <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}>
-            <Link to="/resources">Resources</Link>
-          </NavItem>
+          <Link to="/resources">
+            <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}>
+            Resources
+            </NavItem>
+          </Link>
         </ul>
       )}
     </nav>
