@@ -13,16 +13,11 @@ import { LetsConnect } from '../componenets/lets-connect/LetsConnect'
 import { Footer } from '../componenets/footer/Footer'
 const Home = () => {
 
-  const [target,setTarget]=useState('')
-  const handleHeroClicked=(e)=>{
-    setTarget(e.target)
-  }
-
  return (
     <>
-        <div onClick={handleHeroClicked} className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'>
+        <div  className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'>
           <Container>
-              <Navbar target={target}/>
+              <Navbar />
               <Hero/>
           </Container>
          

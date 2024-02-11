@@ -13,7 +13,8 @@ export default {
          smallTextColor:"#797B86",
         lightBlack:'#0D0D0E',
         primaryBorderColor:'#3F3F48',
-        purpleBorder:"#7C65D8"
+        purpleBorder:"#7C65D8",
+        purpleCardBackground:"#1B1125"
        
       }
     },
