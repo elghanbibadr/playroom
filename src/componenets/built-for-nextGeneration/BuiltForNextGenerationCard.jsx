@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../ui/Card';
 
 const BuiltForNextGenerationCard = ({id,onClick,selectedTabId,className, img1Src,img2Src, title, desc }) => {
-  console.log(id===selectedTabId)
 
   return (
     <Card  onClick={onClick} className={`cursor-pointer ${id === selectedTabId ? "border-[1px] border-purpleBorder  " :""} transition duration-500 hover:border-[1px] h-full py-6 px-4 w-full ${id === 4 ? "hidden md:block": ""} md:p-6 md:py-8 ${className} `}>
