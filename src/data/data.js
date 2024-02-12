@@ -3,8 +3,79 @@ import checkIconWhite from "../assets/checkIconWhite.png"
 import checkIconGrey from "../assets/checkIcongrey.svg"
 import xmark from "../assets/xmark.svg"
 
+import appstore from "../assets/app-store.png"
+import BunchLogo from "../assets/Bunch-Logo.png"
+import readyPlayer from "../assets/readyplayer.png"
+import discord from "../assets/Discord-logo1.png"
+import tiktok from "../assets/TikTok-icon.png"
+import TwitchLogo from "../assets/Twitch-logo.png"
+import crazygame from "../assets/crazygames.png"
+import poki from "../assets/poki.png"
 
 
+import unityIcon from "../assets/unityIcon.svg"
+import threejsIcon from "../assets/threejsIcon.svg"
+import godotIcon from "../assets/godotIcon.svg"
+import cocosIcon from "../assets/cocosIcon.svg"
+import pixijsIcon from "../assets/PixijsIcon.svg"
+import playcanvasIcon from "../assets/playcanvasIcon.svg"
+import reactIcon from "../assets/React-icon.svg"
+
+import webxrIcon from "../assets/webxrIcon.svg"
+import phaserIcon from "../assets/phaserIcon.svg"
+
+
+// HOME DATA
+export const builtForNextGenerationCardsData = [
+    {
+      id: 1,
+      img1Src: appstore, 
+      title: "Casual 2D or 3D",
+      desc: "Get people together for deeper casual games",
+    },
+    {
+      id: 2,
+      img1Src:  readyPlayer,
+      img2Src:  BunchLogo,
+      title: "Social hub",
+      desc: "Build worlds with avatars and in game communication",
+    },
+    {
+      id: 3,
+      img1Src: discord,
+      title: "Stream Style",
+      desc: "Build games that take multi user input"
+    },
+    {
+      id: 4,
+      img1Src: tiktok,
+      img2Src: TwitchLogo,
+      title: "Live Games",
+      desc: "Run live games that connects thousands"
+    },
+    {
+      id: 5,
+      img1Src:crazygame,
+      img2Src: poki,
+      title: "IO",
+      desc: "Build games that brings 100s together"
+    },
+  ];
+  
+
+
+  export const techCards = [
+    { icon: reactIcon, title: 'React' },
+    { icon: unityIcon, title: 'Unity' },
+    { icon: threejsIcon, title: 'Threejs' },
+    { icon: godotIcon, title: 'Godot' },
+    { icon: cocosIcon, title: 'Cocos' },
+    { icon: phaserIcon, title: 'Phaser' },
+    { icon: pixijsIcon, title: 'PixiJs' },
+    { icon: webxrIcon, title: 'WebXR' },
+    { icon: playcanvasIcon, title: 'Playcanvas' },
+  ];
+  
 
 export const featureSubmenu = [
     {

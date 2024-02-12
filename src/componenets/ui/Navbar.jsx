@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
-import hamburgerMenu from "../assets/menuHamburger.svg";
-import logoIcon from "../assets/logoIcon.svg";
-import closeIcon from "../assets/closeIcon.svg";
-import { featureSubmenu } from '../data/data';
-import FeatureSubmenuLinkItem from './ui/FeatureSubmenuLinkItem';
-import NavItem from './ui/NavLink';
+import hamburgerMenu from "../../assets/menuHamburger.svg";
+import logoIcon from "../../assets/logoIcon.svg";
+import closeIcon from "../../assets/closeIcon.svg";
+import { featureSubmenu } from '../../data/data';
+import FeatureSubmenuLinkItem from '../HomePageComponenets/FeatureSubmenuLinkItem';
+import NavItem from './NavLink';
 import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,9 +81,11 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
-            Partners
-          </NavItem>
+          <Link to="/partners">
+            <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
+              Partners
+            </NavItem>
+          </Link>
           <Link to="/resources">
             <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}>
             Resources

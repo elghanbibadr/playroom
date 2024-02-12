@@ -1,6 +1,5 @@
-import Card from "../ui/Card"
+import Card from "../../ui/Card"
 
-import { useRef } from "react";
 const contactCards = [
   { title: 'Get in Touch', bgColor: 'mb-6', icon: null },
   { title: 'Discord', bgColor: '', icon: null },

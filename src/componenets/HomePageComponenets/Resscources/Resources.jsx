@@ -1,7 +1,5 @@
-import React from 'react'
-import ressorces from "../../assets/resourcesImg.svg"
-import Card from '../ui/Card'
-import Button from '../ui/Button'
+import ressorces from "../../../assets/resourcesImg.svg"
+import Button from '../../ui/Button'
 const Resources = () => {
   return (
     <div className=" mt-20   bg-lightBlack    rounded-[18px] border-[0.67px] border-primaryBorderColor overflow-hidden   md:grid md:grid-cols-2 md:gap-x-20 ">

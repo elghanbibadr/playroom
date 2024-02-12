@@ -1,4 +1,4 @@
-import Card from "../ui/Card";
+import Card from "../../ui/Card";
 
 export const SaveDeveloopmentItemCard = ({ image, icon, title, description, className }) => (
     <Card className={`w-full mb-4 md:px-8 md:w-full px-4 py-10 ${className}`}>

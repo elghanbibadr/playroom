@@ -1,14 +1,13 @@
-import React from 'react'
-import Card from '../ui/Card'
-import noBackendIcon from "../../assets/noBackendIcon.svg"
-import noBackendImage from "../../assets/noBackend.svg"
-import lowlatencyImg from "../../assets/lowLatency.svg"
-import region from "../../assets/region.svg"
-import insertCoin from "../../assets/insertCoin.svg"
-import lowlatencyicon from "../../assets/lowlatencyIcon.svg"
-import earthIcon from "../../assets/earthIcon.svg"
-import lowcodeIcon from "../../assets/lowCodeIcon.svg" 
-import Button from '../ui/Button'
+
+import noBackendIcon from "../../../assets/noBackendIcon.svg"
+import noBackendImage from "../../../assets/noBackend.svg"
+import lowlatencyImg from "../../../assets/lowLatency.svg"
+import region from "../../../assets/region.svg"
+import insertCoin from "../../../assets/insertCoin.svg"
+import lowlatencyicon from "../../../assets/lowlatencyIcon.svg"
+import earthIcon from "../../../assets/earthIcon.svg"
+import lowcodeIcon from "../../../assets/lowCodeIcon.svg" 
+import Button from '../../ui/Button'
 import { SaveDeveloopmentItemCard } from './SaveDeveloopmentItemCard'
 
 export const saveDevCardsData = [

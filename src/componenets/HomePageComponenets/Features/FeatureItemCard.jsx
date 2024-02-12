@@ -1,6 +1,4 @@
-import React from 'react'
-import Card from '../ui/Card'
-import moderationIcon from "../../assets/moderationIcon.svg"
+import Card from '../../ui/Card'
 const FeatureItemCard = ({imgSrc,title,subheading}) => {
   return (
     <Card className="pt-10 carousel-item w-[172px]  md:m-6 px-12 md:pb-10 h-[150px] md:h-[180px] flex flex-col items-start justify-end md:w-full">

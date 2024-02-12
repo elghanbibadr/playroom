@@ -1,9 +1,8 @@
 import PricingCard from "../../componenets/ui/PricingCard"
 import { Container } from "../../componenets/ui/Container"
-import PackageList from "../../componenets/multiplayer/PackageList"
 import { plansData } from "../../data/data"
 import { packageOffersData1,packageOffersData2,packageOffersData3 } from "../../data/data"
-
+import PackageList from "../../componenets/PricingPageComponenets/PackageList"
 
 const Pricing = () => {
   return (  

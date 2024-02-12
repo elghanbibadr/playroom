@@ -1,9 +1,9 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Navbar from '../Navbar'
-import { Footer } from '../footer/Footer'
+import Navbar from './Navbar'
+import { Footer } from './Footer'
 import { Container } from './Container'
-import Hero from '../Hero'
+import Hero from '../HomePageComponenets/Hero/Hero'
 import rectangleLight from '../../assets/RectangleLight.png'
 import { useLocation } from 'react-router-dom';
 import Button from './Button'

@@ -1,4 +1,4 @@
-import Button from "./ui/Button"
+import Button from "../../ui/Button"
 const Hero = () => {
   return (
     <div className='md:text-center   mb-20 md:mt-[17vh]  '>

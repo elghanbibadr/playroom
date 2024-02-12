@@ -1,4 +1,4 @@
-import Card from './Card'
+import Card from '../ui/Card'
 const FeatureSubmenuLinkItem = ({title,description}) => {
   return (
     <div   className='flex gap-4'>
