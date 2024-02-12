@@ -2,8 +2,10 @@
 
 import noBackendIcon from "../../assets/noBackendIcon.svg"
 import grayRectangle from "../../assets/grayRectangle.png"
-
+import simpleApisectionImg from "../../assets/simpleApiSectionImg.png"
 import Button from "../../componenets/ui/Button"
+
+
 const FeaturesPage = () => {
   return (
     <div>
@@ -64,6 +66,25 @@ Main Title Here
 </div>
 
     {/* use case end */}
+
+
+    {/* Simple api section */}
+    <div className="text-center mt-40 md:mt-56">
+    <h2>Simple API</h2>
+                     <p className="my-6 md:mb-10">
+                     Simple API to set or get the state of game room. The state is <br className='hidden md:block' /> automatically synced between all players and screens.        </p>
+     <img src={simpleApisectionImg} alt="" />
+ 
+    </div>
+
+    {/* doc */}
+    <div className="text-center mt-40 md:mt-60 md:pb-60 ">
+    <h2>Documentation</h2>
+          <p className="my-6  md:w-auto mx-auto">
+          This module is an addon feature with usage price based on events.
+          </p>
+          <Button>Get Started</Button>
+    </div>
     </div>
   )
 }
