@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Pricing from './pages/Pricing/Pricing';
-import Features from './pages/features/Features';
+import FeaturesPage from './pages/features/FeaturesPage';
 import ResourcesPage from './pages/ResourcesPage';
 import AppLayout from './componenets/ui/AppLayout';
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         <Route index  path="/" element={<Home/>} />
           
         <Route path="pricing" element={<Pricing/>} />
-        <Route path="features" element={<Features/>} />
+        <Route path="features" element={<FeaturesPage/>} />
         <Route path="resources" element={<ResourcesPage/>} />
         </Route>
        

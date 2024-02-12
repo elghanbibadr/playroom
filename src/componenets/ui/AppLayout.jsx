@@ -13,7 +13,7 @@ const AppLayout = () => {
     console.log("path", location.pathname); 
   return (
     <>
-     <div >
+     <div className='p-4' >
           <Container>
               <Navbar />
            {location.pathname === "/" && <div className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'><Hero/></div>}

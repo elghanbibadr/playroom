@@ -11,6 +11,8 @@ html{
 body{
   font-family: "Noto Sans", sans-serif;
  background-color: black;
+ overflow-x: hidden;
+
 }
   h1,li,h2,h3,h6{
     color: white;
