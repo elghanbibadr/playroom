@@ -1,4 +1,4 @@
-
+import Button from "../ui/Button"
 const Documentation = () => {
   return (
     <div className="text-center mt-40 md:mt-60 md:pb-60 ">

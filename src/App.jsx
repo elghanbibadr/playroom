@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
+import LoadingSpinner from "./componenets/ui/LoadingSpinner";
 // Lazy loading components
 const Pricing = React.lazy(() => import("./pages/Pricing/Pricing"));
 const ResourcesPage = React.lazy(() => import("./pages/Resscources/ResourcesPage"));
@@ -15,7 +15,7 @@ const FeaturesPage = React.lazy(() => import("./pages/features/FeaturesPage"));
 const App = () => {
   return (
     <Router>
-      <Suspense >
+      <Suspense  fallback={<LoadingSpinner/>}>
         <Routes>
           <Route path="/" element={<AppLayout/>}>
             <Route index path="/" element={<Home/>} />

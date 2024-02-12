@@ -66,21 +66,23 @@ const Navbar = () => {
             Pricing
             </NavItem>
           </Link>
-          <li
-            onMouseEnter={() => handleItemClick(3)}
-            className={`rounded-full my-3 md:my-0 relative hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4]' : ''}`}
-          >
-            <Link to="/features">Features</Link>
-            {clickedItem === 3 && (
-              <div
-                className='featureMenu absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-14 lg:p-16'
-              >
-                {featureSubmenu.map((feature, index) => (
-                  <FeatureSubmenuLinkItem key={index} title={feature.title} description={feature.description} />
-                ))}
-              </div>
-            )}
-          </li>
+          <Link to="/features">
+            <li
+              onMouseEnter={() => handleItemClick(3)}
+              className={`rounded-full my-3 md:my-0 relative hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4]' : ''}`}
+            >
+              Features
+              {clickedItem === 3 && (
+                <div
+                  className='featureMenu z-20 absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-10 md:grid grid-cols-2 gap-14 lg:p-16'
+                >
+                  {featureSubmenu.map((feature, index) => (
+                    <FeatureSubmenuLinkItem key={index} title={feature.title} description={feature.description} />
+                  ))}
+                </div>
+              )}
+            </li>
+          </Link>
           <Link to="/partners">
             <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
               Partners
