@@ -6,6 +6,7 @@ import { Container } from '../componenets/ui/Container'
 import Resources from '../componenets/ressources/Resources'
 import {BuiltForNextGeneration} from '../componenets/built-for-nextGeneration/BuiltForNextGeneration'
 import { LetsConnect } from '../componenets/lets-connect/LetsConnect'
+import { Footer } from '../componenets/footer/Footer'
 const Home = () => {
 
  return (
@@ -22,7 +23,7 @@ const Home = () => {
     <LetsConnect />
     </Container>
   
-    
+     <Footer/>
     </>
 
 

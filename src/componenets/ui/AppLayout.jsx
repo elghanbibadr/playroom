@@ -13,12 +13,12 @@ const AppLayout = () => {
     console.log("path", location.pathname); 
   return (
     <>
-     <div  className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'>
+     <div >
           <Container>
               <Navbar />
-           {location.pathname === "/" && <Hero/>}
+           {location.pathname === "/" && <div className='p-4 heroWrraper min-h-[100vh] md:h-[100vh] z-10 relative'><Hero/></div>}
            {location.pathname === "/pricing" &&  
-          <div className='mt-32 text-left md:text-center  p-5'>
+          <div className='mt-32 bg-black text-left   p-5'>
             <h2>Simple Pricing </h2>
             <p className='mt-4 md:my-[3vh]'>
               Transparent pricing based on MAU (Monthly active users). Pay Zero for non-commercial and low-usage games.
@@ -28,20 +28,19 @@ const AppLayout = () => {
 
       }  
            {location.pathname === "/resources" &&  
-          <div className=" text-left md:text-center mt-20 md:mt-40">
+          <div className=" text-left bg-black  mt-20 md:mt-40">
           <h2>Resources</h2>
-          <p className="my-6  md:w-auto mx-auto ">
-            Multiplayer configurations and tools to create games previously <br className='hidden md:block' /> only feasible by large-scale teams now possible by EVERYONE.
+          <p className="my-6   ">
+          Quickstart and build your next web-based <br className='hidden md:block' /> multiplayer game with Playroom integrated.
           </p>
-          <Button>Ressources</Button>
+          {/* <Button>Ressources</Button> */}
       </div>
       }  
           </Container>
          
-        <img className='w-full absolute left-0 right-0 bottom-0 h-[180px]' src={rectangleLight} alt="" />
+        {location.pathname === "/" &&  <img className='w-full absolute left-0 right-0 bottom-0 h-[180px]' src={rectangleLight} alt="" />}
         </div>
     <Outlet/>
-     <Footer/>
     </>
   )
 }
