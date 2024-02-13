@@ -1,4 +1,6 @@
 import Button from "../../ui/Button"
+import rectangleLight from '../../../assets/RectangleLight.png'
+
 const Hero = () => {
   return (
     <div className='md:text-center   mb-20 md:mt-[17vh]  '>
@@ -15,6 +17,7 @@ const Hero = () => {
       </p>
     </div>
    <Button>Get started for free</Button>
+   <img className='w-full absolute left-0 right-0 bottom-0 h-[180px]' src={rectangleLight} alt="" />
 </div>
 
 )

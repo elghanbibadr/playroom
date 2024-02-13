@@ -12,6 +12,7 @@ body{
   font-family: "Noto Sans", sans-serif;
  background-color: black;
  overflow-x: hidden;
+ /* padding-block: 10px; */
 
 }
   h1,li,h2,h3,h6{
@@ -21,7 +22,9 @@ h2{
   @apply text-[3rem] leading-[30px] font-medium lg:text-[4.8rem] lg:leading-[48px]
 }
 
-
+body{
+  @apply pt-3 md:py-10
+}
 
   p{
     @apply text-[1.4rem] leading-[20px] font-normal text-textGrey md:text-[1.6rem] md:leading-[22px]
@@ -57,15 +60,11 @@ h2{
   .heroWrraper{
    background-image: url(/src/assets/mobileherobg.png);
    background-size: contain;
-   /* background-position: center; */
-   /* background-repeat: no-repeat; */
+
   }
 
 
 
-.resources{
-  /* background: url(/src/assets/shadow.png); */
-}
 
 
 /* GENERAL STYLES */

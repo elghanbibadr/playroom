@@ -31,7 +31,7 @@ const ResourcesPage = () => {
        
     
     <Container>
-        <div className="sm:grid mt-20 md:mt-40 sm:grid-cols-2 md:grid-cols-3 sm:gap-10">
+        <div className="sm:grid mt-20  md:mt-40 sm:grid-cols-2 md:grid-cols-3 sm:gap-10">
         {ressourcesListImages.map((src,index) => {
           return <ResscourcesCard key={index} imgSrc={src} />
         })}  

@@ -8,10 +8,9 @@ import LoadingSpinner from "./componenets/ui/LoadingSpinner";
 // Lazy loading components
 const Pricing = React.lazy(() => import("./pages/Pricing/Pricing"));
 const ResourcesPage = React.lazy(() => import("./pages/Resscources/ResourcesPage"));
-const AppLayout = React.lazy(() => import("./componenets/ui/AppLayout"));
 const Home = React.lazy(() => import("./pages/Home/HomePage"));
 const FeaturesPage = React.lazy(() => import("./pages/features/FeaturesPage"));
-
+import AppLayout from "./componenets/ui/AppLayout";
 const App = () => {
   return (
     <Router>
