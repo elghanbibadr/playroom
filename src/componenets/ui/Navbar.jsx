@@ -46,7 +46,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='md:flex md:justify-between md:gap-6 md:items-center'>
+    <nav className='md:flex pt-10 md:pt-16 md:justify-between md:gap-6 md:items-center'>
       <Link to="/"><img className='hidden md:block md:w-[138px] md:h-[38px]' src={logoIcon} alt="playroom logo" /></Link>
       <div className='flex justify-between items-center border-[#3F3F48] border-[1px] md:hidden bg-[#0F0F10] md:text-center md:w-1/2 mx-auto mt-6 px-10 py-6 rounded-full'>
         <Link to="/"><img className='md:hidden' src={logoIcon} alt="playroom logo" /></Link>

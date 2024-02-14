@@ -37,7 +37,7 @@ const AppLayout = () => {
           </Container>
          
        
-    <Outlet/>
+    <Outlet />
     </>
   )
 }
