@@ -20,7 +20,7 @@ export const LetsConnect = () => {
       {contactCards.map((card, index) => (
         <Card
           key={index}
-          className={`w-full cursor-pointer ${card.bgColor} md:mb-0 flex justify-center items-center h-[120px]`}
+          className={`w-full hover:bg-[#2a2a2c] transition-all cursor-pointer duration-100 ${card.bgColor} md:mb-0 flex justify-center items-center h-[120px]`}
         >
           <h4 className="text-white font-medium text-[1.6rem] ">{card.title}</h4>
         </Card>
