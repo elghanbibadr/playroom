@@ -5,6 +5,8 @@ import { Container } from './Container'
 
 import { useLocation } from 'react-router-dom';
 import Button from './Button'
+import { Footer } from './Footer';
+import { LetsConnect } from '../HomePageComponenets/LetsConnect/LetsConnect';
 const AppLayout = () => {
     const location = useLocation();
 
@@ -16,12 +18,11 @@ const AppLayout = () => {
             { location.pathname !=="/" && <Navbar /> }
            
            {location.pathname === "/pricing" &&  
-          <div className='mt-32 bg-black text-left   p-5'>
+          <div className='mt-32 bg-black text-center  p-5'>
             <h2>Simple Pricing </h2>
             <p className='mt-4 md:my-[3vh]'>
-              Transparent pricing based on MAU (Monthly active users). Pay Zero for non-commercial and low-usage games.
+            Pricing based on MAU (Monthly active users) per <br className='hidden md:block' /> Game. Pay Zero for non-commercial and low-usage games.
             </p>
-            <Button>Price Comparison</Button>
           </div>
 
       }  
@@ -38,6 +39,8 @@ const AppLayout = () => {
          
        
     <Outlet />
+    <Container><LetsConnect/></Container>
+    <Footer/>
     </>
   )
 }

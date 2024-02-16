@@ -14,6 +14,7 @@ export default {
         lightBlack:'#0D0D0E',
         primaryBorderColor:'#3F3F48',
         purpleBorder:"#7C65D8",
+        purpleborder2:'#602F92',
         purpleCardBackground:"#1B1125"
        
       }

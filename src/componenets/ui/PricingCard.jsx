@@ -1,13 +1,12 @@
 import Card from "./Card"
-import Button from "./Button"
-import checkIcon from "../../assets/checkIcon.svg"
+
 
 
 const FeatureItemToBeYellowText="10,000 MAU extra credits"
 
 const PricingCard = ({title,price,buttonName,planFeatures}) => {
   return (
-    <Card className={`rounded-[17px] py-14  ${price === "Custom" ? "bg-purpleCardBackground":""}  px-8 my-4`}>
+    <Card className={`rounded-[17px] py-14  ${price === "Custom" ? "bg-purpleCardBackground border-purpleborder2 border":""}  px-8 my-4`}>
         <div className="md:text-left">
             <span className="text-white text-[15px] font-semibold">{title}</span>
             <span className="flex ">

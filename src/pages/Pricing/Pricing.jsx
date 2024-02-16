@@ -7,7 +7,7 @@ import PackageList from "../../componenets/PricingPageComponenets/PackageList"
 const Pricing = () => {
   return (  
     <Container>
-      <div className="mt-20 gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+      <div className="mt-20 gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  ">
         {plansData.map((plan, index) => {
           return <PricingCard key={index} {...plan} />
         })}
@@ -15,22 +15,40 @@ const Pricing = () => {
       <div className="text-center mt-40">
         <h2>Multiplayer & More </h2>
         <p className='mt-4 md:my-[3vh]'>
-          Building multiplayer is hard and its more than just networking. Leverage Playroom to you ship your games faster and across platforms.
+          Building multiplayer is hard and its more than just networking. Leverage <br className='hidden md:block' />  Playroom to you ship your games faster and across platforms.
         </p>
-        <div className="md:grid sm:w-[80%] sm:mx-auto md:w-full lg:w-[90%] mt-20 md:mt-40   md:grid-cols-3 md:grid-rows-auto ">
+       
+        {/* mt-20 md:mt-40 */}
+        <div className="md:grid sm:w-[80%] sm:mx-auto mt-20 md:mt-40 md:w-full lg:w-[70%]    md:grid-cols-3 md:grid-rows-auto ">
+     
           <div>
             {packageOffersData1.map(({ packageName, packageFeatures }, index) => {
-              return <PackageList key={index} packageOffres={packageFeatures} packageName={packageName} />;
+              return <> 
+                {index === 0 && <div className="hidden md:sticky md:block bg-black md:top-0">
+                <h6 className="text-left  relative   bg-black top-8 pb-4">Multiplayer Services</h6>
+                </div> }<PackageList key={index} className='text-left' packageOffres={packageFeatures} packageName={packageName} />  </> 
             })}  
           </div>
-          <div className="bg-[#1B1125] rounded-3xl py-6 md:py-0 h-full">
+          <div className="bg-[#1B1125] border-[#602F92] border rounded-3xl py-6 md:py-0 h-full">
             {packageOffersData2.map(({ packageName, packageFeatures }, index) => {
-              return <PackageList  className=" text-white"  key={index} packageOffres={packageFeatures} packageName={packageName} hasBorder={false}/>;
+              return <>  
+              {index === 0 && <div className="hidden md:sticky md:block bg-[#1B1125] rounded-3xl  md:top-0">
+                <h6 className="text-4xl relative bg-[#1B1125] top-8">Playroom</h6>
+                </div> }
+              <PackageList  className=" text-white"  key={index} index={index} packageOffres={packageFeatures} packageName={packageName} hasBorder={false}/>;
+              </> 
             })}
           </div>
           <div>           
           {packageOffersData3.map(({ packageName, packageFeatures }, index) => {
-              return <PackageList  className=" text-white"  key={index} packageOffres={packageFeatures} packageName={packageName} />;
+             return <>
+                 {index === 0 && <div className="hidden md:sticky md:block bg-black rounded-3xl  md:top-0">
+                <h6 className="l relative bg-black top-8">Others</h6>
+                </div> }
+               <PackageList  className=" text-white"  key={index} packageOffres={packageFeatures} packageName={packageName} />;
+
+              </> 
+              
             })}
           </div>
         </div>

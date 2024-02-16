@@ -32,9 +32,9 @@ const Home = () => {
       <SaveDevelopment />
     <Features/>
     <Resources />
-    <LetsConnect />
+    {/* <LetsConnect /> */}
     </Container>
-     <Footer/>
+     {/* <Footer/> */}
     </>
 
 

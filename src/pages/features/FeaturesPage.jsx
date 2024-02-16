@@ -6,16 +6,21 @@ import ReadDoc from "../../componenets/FeaturesPageComponenet/ReadDoc"
 import UseCase from "../../componenets/FeaturesPageComponenet/UseCase"
 import SimpleApi from "../../componenets/FeaturesPageComponenet/SimpleApi"
 import Documentation from "../../componenets/FeaturesPageComponenet/Documentation"
+import { Container } from "../../componenets/ui/Container"
+
+
 const FeaturesPage = () => {
   return (
-    <>
+    <Container>
       <FeaturesHero />
-      <FeaturesList />
+ 
+        <FeaturesList />
+   ?
       <ReadDoc />
       <UseCase />
       <SimpleApi />
       <Documentation />
-    </>
+    </Container>
   )
 }
 
