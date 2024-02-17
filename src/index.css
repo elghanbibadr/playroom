@@ -38,9 +38,13 @@ h2{
   
   .gradientBtn {
     background: linear-gradient(to bottom right, #C8A2FF, white);
-  }
-  
- 
+
+}
+
+button,.gradientBtn:hover {
+    background: white; /* Change background color on hover */
+}
+
 
   .featureMenu{
     background-image: url(/src/assets/rectangleWithlightShadow.png);

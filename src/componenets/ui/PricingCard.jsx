@@ -14,7 +14,7 @@ const PricingCard = ({title,price,buttonName,planFeatures}) => {
               {/\d/.test(price) && <span className="inline-block self-end left-1 text-[13px] relative bottom-5 font-light text-white">/month</span>}
             </span>
         </div>
-        <button className={`rounded-[6px]  text-[14px] bg-transparent w-full my-8 p-4 py-5  border-[1.8px] border-[#292a2d83] ${price.toLowerCase() === "free" ? "gradientBtn text-black border-none" : "text-white"} `}>{buttonName}</button>
+        <button className={`rounded-[6px]  text-[14px] bg-transparent w-full my-8 p-4 py-5  border-[1.8px] border-[#292a2d83] ${price.toLowerCase() === "free" ? "gradientBtn text-black border-none" : "text-white"} hover:bg-white hover:text-black transition-all duration-200 `}>{buttonName}</button>
         <ul>
             {planFeatures.map((feature,index) =>{
                 return  <li key={index} className="flex items-center">                
