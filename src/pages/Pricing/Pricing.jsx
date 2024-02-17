@@ -19,7 +19,7 @@ const Pricing = () => {
         </p>
        
         {/* mt-20 md:mt-40 */}
-        <div className="md:grid sm:w-[80%] sm:mx-auto mt-20 md:mt-40 md:w-full lg:w-[70%]    md:grid-cols-3 md:grid-rows-auto ">
+        <div className="md:grid sm:w-[80%] sm:mx-auto mt-20 md:mt-40 md:w-full lg:w-[70%]    md:grid-cols-3 md:grid-rows-4  ">
      
           <div>
             {packageOffersData1.map(({ packageName, packageFeatures }, index) => {
@@ -29,14 +29,14 @@ const Pricing = () => {
                 </div> }<PackageList key={index} className='text-left' packageOffres={packageFeatures} packageName={packageName} />  </> 
             })}  
           </div>
-          <div className="bg-[#1B1125] border-[#602F92] border rounded-3xl py-6 md:py-0 h-full">
+          <div className="bg-[#1B1125] border-[#602F92] border rounded-3xl py-6 md:py-0  h-full">
             {packageOffersData2.map(({ packageName, packageFeatures }, index) => {
               return <>  
               {index === 0 && <div className="hidden md:sticky md:block    rounded-3xl bg-[#1B1125]   md:top-0 md:pt-6">
                 <h6 className="text-[24px] ">Playroom</h6>
                 </div> }
            
-              <PackageList  className=" text-white"  key={index} index={index} packageOffres={packageFeatures} packageName={packageName} hasBorder={false}/>;
+              <PackageList  className=" text-white"  key={index} index={index} packageOffres={packageFeatures} packageName={packageName} hasBorder={false}/>
               </> 
             })}
           </div>
@@ -46,7 +46,7 @@ const Pricing = () => {
                  {index === 0 && <div className="hidden md:sticky md:block bg-black md:top-0 md:pt-8 border-b-[1.5px] pb-6 border-[#8f8d8d73]">
                 <h6 className="text-center  text-[13px]  text-[#D2D2D2]">Others</h6>
                 </div> }
-               <PackageList  className=" text-white"  key={index} packageOffres={packageFeatures} packageName={packageName} />;
+               <PackageList  className=" text-white"  key={index} packageOffres={packageFeatures} packageName={packageName} />
 
               </> 
               
