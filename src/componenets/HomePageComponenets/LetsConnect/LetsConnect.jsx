@@ -9,7 +9,7 @@ export const LetsConnect = () => {
 
 
   return (
-    <div  className="mt-20 md:mt-64 p-4">
+    <div  className="mt-40 md:mt-64 p-4">
       
            <div className="text-center   ">
         <h2 className="text-white">Let’s Connect</h2>

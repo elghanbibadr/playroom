@@ -11,16 +11,17 @@ import { Container } from "../../componenets/ui/Container"
 
 const FeaturesPage = () => {
   return (
-    <Container>
+    <>
       <FeaturesHero />
- 
+     <Container>
         <FeaturesList />
-   ?
       <ReadDoc />
       <UseCase />
       <SimpleApi />
       <Documentation />
     </Container>
+    </>
+    
   )
 }
 

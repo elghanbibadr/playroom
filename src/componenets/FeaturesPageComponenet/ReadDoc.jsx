@@ -13,7 +13,7 @@ const ReadDoc = () => {
       <Button >Read Docs</Button>
     </div>
 
-    <img className='mt-14 sm:mt-0  md:mt-0  h-[300px] md:h-full overflow-hidden' src={grayRectangle} alt="gray rectangle  background" />
+    <img className='mt-14 sm:mt-0  md:mt-0   h-full md:w-full overflow-hidden' src={grayRectangle} alt="gray rectangle  background" />
 
   </div>
   )

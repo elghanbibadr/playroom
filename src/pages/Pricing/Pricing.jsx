@@ -19,7 +19,7 @@ const Pricing = () => {
         </p>
        
         {/* mt-20 md:mt-40 */}
-        <div className="md:grid sm:w-[80%] sm:mx-auto mt-20 md:mt-40 md:w-full lg:w-[70%]    md:grid-cols-3 md:grid-rows-4  ">
+        <div className="md:grid sm:w-[80%] sm:mx-auto mt-20 md:my-40 md:w-full lg:w-[70%]    md:grid-cols-3   ">
      
           <div>
             {packageOffersData1.map(({ packageName, packageFeatures }, index) => {
