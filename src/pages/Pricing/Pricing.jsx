@@ -31,10 +31,10 @@ const Pricing = () => {
                 </div> }<PackageList key={index} className='text-left' packageOffres={packageFeatures} packageName={packageName} />  </> 
             })}  
           </div>
-          <div className="bg-[#1B1125] border-[#602F92]  border rounded-3xl py-6 md:py-0  h-full">
+          <div className="bg-[#1B1125] border-[#602F92]   border rounded-3xl py-6 md:py-0  h-full">
             {packageOffersData2.map(({ packageName, packageFeatures }, index) => {
               return <>  
-              {index === 0 && <div className="hidden md:sticky md:block  md:top-[10.8rem]  rounded-3xl bg-[#1B1125]    md:pt-6 md:z-20 ">
+              {index === 0 && <div className="hidden md:sticky md:block border-[#602F92]   border-t    md:top-[10.8rem] rounded-3xl  bg-[#1B1125]    md:pt-6 md:z-20 ">
                 <h6 className="text-[24px] ">Playroom</h6>
                 </div> }
            
