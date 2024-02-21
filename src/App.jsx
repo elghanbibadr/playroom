@@ -11,6 +11,9 @@ const ResourcesPage = React.lazy(() => import("./pages/Resscources/ResourcesPage
 const Home = React.lazy(() => import("./pages/Home/HomePage"));
 const FeaturesPage = React.lazy(() => import("./pages/features/FeaturesPage"));
 import AppLayout from "./componenets/ui/AppLayout";
+import PartnersPage from "./pages/Partners/PartnersPage";
+
+
 const App = () => {
   return (
     <Router>
@@ -21,6 +24,7 @@ const App = () => {
             <Route path="pricing" element={<Pricing/>} />
             <Route path="features" element={<FeaturesPage/>} />
             <Route path="resources" element={<ResourcesPage/>} />
+            <Route path="partners" element={<PartnersPage/>} />
           </Route>
         </Routes>
       </Suspense>
