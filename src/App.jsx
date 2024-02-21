@@ -12,7 +12,7 @@ const Home = React.lazy(() => import("./pages/Home/HomePage"));
 const FeaturesPage = React.lazy(() => import("./pages/features/FeaturesPage"));
 import AppLayout from "./componenets/ui/AppLayout";
 import PartnersPage from "./pages/Partners/PartnersPage";
-
+import NotFoundPage from "./pages/NotFound/NotFoundPage";
 
 const App = () => {
   return (
@@ -25,6 +25,8 @@ const App = () => {
             <Route path="features" element={<FeaturesPage/>} />
             <Route path="resources" element={<ResourcesPage/>} />
             <Route path="partners" element={<PartnersPage/>} />
+            <Route path="*" element={<NotFoundPage />} />
+
           </Route>
         </Routes>
       </Suspense>
