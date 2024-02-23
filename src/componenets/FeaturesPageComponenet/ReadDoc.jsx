@@ -1,6 +1,6 @@
 import Button from '../ui/Button'
 
-import grayRectangle from "../../assets/grayRectangle.png"
+import grayRectangle from "../../assets/grayRectangle.webp"
 const ReadDoc = () => {
   return (
     <div className=" mt-20 m-6  bg-lightBlack    rounded-[18px] border-[0.67px] border-primaryBorderColor overflow-hidden   sm:grid sm:grid-cols-2 sm:gap-x-20 ">

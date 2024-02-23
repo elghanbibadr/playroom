@@ -1,15 +1,15 @@
 import checkIcon from "../assets/checkIcon.svg"
-import checkIconWhite from "../assets/checkIconWhite.png"
+import checkIconWhite from "../assets/checkIconWhite.webp"
 import checkIconGrey from "../assets/checkIcongrey.svg"
 import xmark from "../assets/xmark.svg"
 
-import appstore from "../assets/app-store.png"
-import BunchLogo from "../assets/Bunch-Logo.png"
+import appstore from "../assets/app-store.webp"
+import BunchLogo from "../assets/Bunch-Logo.webp"
 import readyPlayer from "../assets/readyplayer.png"
-import discord from "../assets/Discord-logo1.png"
+import discord from "../assets/Discord-logo1.webp"
 import tiktok from "../assets/TikTok-icon.png"
 import TwitchLogo from "../assets/Twitch-logo.png"
-import crazygame from "../assets/crazygames.png"
+import crazygame from "../assets/crazygames.webp"
 import poki from "../assets/poki.png"
 
 

@@ -1,5 +1,5 @@
-import editorMobileImg from "../../../assets/image 36 (3).png"
-import editorDesktopImg from "../../../assets/editorbgdesktop2.png"
+import editorMobileImg from "../../../assets/image-36 (3).webp"
+import editorDesktopImg from "../../../assets/editorbgdesktop2.webp"
 
 const EditorBox = () => {
   return (
