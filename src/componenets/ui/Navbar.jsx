@@ -5,6 +5,7 @@ import closeIcon from "../../assets/closeIcon.svg";
 import { featureSubmenu } from '../../data/data';
 import FeatureSubmenuLinkItem from '../HomePageComponenets/FeatureSubmenuLinkItem';
 import NavItem from './NavLink';
+
 import { Link } from 'react-router-dom';
 
 
@@ -58,8 +59,29 @@ const Navbar = () => {
           ref={submenuRef}
           className='flex py-6 md:py-4 flex-col md:w-[70%] lg:w-auto lg:relative lg:right-24 lg:mx-auto cursor-pointer gap-6 md:flex md:flex-row md:gap-0 text-[1.4rem] bg-[#0F0F10] mt-6 md:mt-0 p-6 md:rounded-full md:justify-between mx-auto rounded-[18px] border-[0.67px] border-primaryBorderColor px-12'
         >
+           <li
+              onMouseEnter={() => handleItemClick(3)}
+              className={`rounded-full my-3 md:my-0 relative hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:bg-white text-black' : ''} hover:text-white`}
+            >
+              <span className='flex  items-center justify-between w-full inline-flex '>
+                <span className=''>Features</span>
+                <svg className='relative left-5' width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 0.903076L4.25 4.65308L8 0.903076" stroke="black"/>
+                </svg>
+              </span>
+
+              {clickedItem === 3 && (
+                <div
+                  className='featureMenu z-20 absolute w-[570px] h-[200px] rounded-3xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-8 md:grid grid-cols-2 items-center justify-center gap-6 lg:p-10'
+                >
+                  {featureSubmenu.map((feature, index) => (
+                    <FeatureSubmenuLinkItem key={index} title={feature.title} description={feature.description} icon={feature.icon} />
+                  ))}
+                </div>
+              )}
+            </li>
           <NavItem itemIndex={1} handleItemClick={handleItemClick} clickedItem={clickedItem}>
-            Development Kit
+          Documentation
           </NavItem>
           <Link to="/pricing">
             <NavItem itemIndex={2} handleItemClick={handleItemClick} clickedItem={clickedItem}>
@@ -67,30 +89,21 @@ const Navbar = () => {
             </NavItem>
           </Link>
           {/* <Link to="/features"> */}
-            <li
-              onMouseEnter={() => handleItemClick(3)}
-              className={`rounded-full my-3 md:my-0 relative hover:text-[#efefefc8] border-[1px] border-lightBlack transition-colors duration-150 md:p-2 md:py-4 md:px-6 lg:py-5 lg:px-11 ${clickedItem === 3 ? 'md:border-[#8C72F4]' : ''}`}
-            >
-              <Link to="features">Features</Link>
-              {clickedItem === 3 && (
-                <div
-                  className='featureMenu z-20 absolute w-[500px] h-fit rounded-2xl right-[-20rem] hidden md:block border-[#3F3F48] border-[0.67px] top-[6.5rem] p-8 md:grid grid-cols-2 gap-14 lg:p-16'
-                >
-                  {featureSubmenu.map((feature, index) => (
-                    <FeatureSubmenuLinkItem key={index} title={feature.title} description={feature.description} />
-                  ))}
-                </div>
-              )}
-            </li>
+           
           {/* </Link> */}
-          <Link to="/partners">
+          {/* <Link to="/partners">
             <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
               Partners
             </NavItem>
-          </Link>
+          </Link> */}
           <Link to="/resources">
             <NavItem itemIndex={5} handleItemClick={handleItemClick} clickedItem={clickedItem}>
             Resources
+            </NavItem>
+          </Link>
+          <Link to="/resources">
+            <NavItem itemIndex={4} handleItemClick={handleItemClick} clickedItem={clickedItem}>
+            Sign in
             </NavItem>
           </Link>
         </ul>

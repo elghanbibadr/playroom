@@ -24,6 +24,11 @@ import reactIcon from "../assets/React-icon.svg"
 import webxrIcon from "../assets/webxrIcon.svg"
 import phaserIcon from "../assets/phaserIcon.svg"
 
+import earthIcon from '../assets/earthIcon.svg'
+import scyncmodelIcon from '../assets/scyncmodel.svg'
+import integrationIcon from '../assets/integrationIcon.svg'
+import devIcon from '../assets/devIcon.svg'
+
 
 // HOME DATA
 export const builtForNextGenerationCardsData = [
@@ -79,29 +84,29 @@ export const builtForNextGenerationCardsData = [
 
 export const featureSubmenu = [
     {
-      title: 'Serverless',
+      title: 'Multiplayer Kit',
       description: 'A robust architecture to build with zero backend code',
+      icon:earthIcon,
     },
     {
-      title: 'Web Multiplayer',
-      description: 'Build and ship 2D & 3D games across platforms',
+      title: 'Integrations',
+      description: 'Build with your favorite AI, Avatar and social tools',
+      icon:integrationIcon,
+  
     },
     {
-      title: 'Sync’d Objects',
-      description: 'Embeddable UI Components that speeds up development',
+      title: 'Sync’d Modules',
+      description: 'Embeddable game objects that speeds up development',
+      icon:scyncmodelIcon,
+  
     },
     {
-      title: 'Stream Mode',
-      description: 'Embeddable UI Components that speeds up development',
+      title: 'Hosting',
+      description: 'Instantly deploy and share games globally',
+      icon:devIcon,
+  
     },
-    {
-      title: 'Playtesting',
-      description: 'Workflow to improve multiplayer playtesting',
-    },
-    {
-      title: 'Live',
-      description: 'Workflow to improve multiplayer playtesting',
-    },
+    
   ];
 
 
