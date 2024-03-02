@@ -25,6 +25,7 @@ import webxrIcon from "../assets/webxrIcon.svg"
 import phaserIcon from "../assets/phaserIcon.svg"
 
 import earthIcon from '../assets/earthIcon.svg'
+import purpleEarth from '../assets/purpleEarth.svg'
 import scyncmodelIcon from '../assets/scyncmodel.svg'
 import integrationIcon from '../assets/integrationIcon.svg'
 import devIcon from '../assets/devIcon.svg'
@@ -87,11 +88,13 @@ export const featureSubmenu = [
       title: 'Multiplayer Kit',
       description: 'A robust architecture to build with zero backend code',
       icon:earthIcon,
+      onHoverIcon:purpleEarth,
     },
     {
       title: 'Integrations',
       description: 'Build with your favorite AI, Avatar and social tools',
       icon:integrationIcon,
+      
   
     },
     {
