@@ -1,5 +1,5 @@
 import checkIcon from "../assets/checkIcon.svg"
-import checkIconWhite from "../assets/checkIconWhite.webp"
+import checkIconWhite from "../assets/checkIconWhite.svg"
 import checkIconGrey from "../assets/checkIcongrey.svg"
 import xmark from "../assets/xmark.svg"
 
